@@ -1,0 +1,13 @@
+*** Query: 2025-07-29 09:44:15 UTC *******************
+SELECT GET_LOCK('c0fc1da992487c8371cc2ca942db3d50', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 0.112434 s
+
+*** Query: 2025-07-29 09:44:15 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:f3341a4fb6fe995dfb8c36a08e111790'
+AND `ip_address` = '::1'
+ Affected rows: -1
+ Execution Time: 0 µs
+
