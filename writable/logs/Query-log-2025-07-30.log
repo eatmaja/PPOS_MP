@@ -54151,3 +54151,1454 @@ SELECT RELEASE_LOCK('8972964e2afacf33d716ddd6a257826c') AS ci_session_lock
  Affected rows: 1
  Execution Time: 57.68 ms
 
+*** Query: 2025-07-30 06:35:04 UTC *******************
+SELECT GET_LOCK('8972964e2afacf33d716ddd6a257826c', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 59.865 ms
+
+*** Query: 2025-07-30 06:35:04 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:28a8dd7533a2de630e1e2a7a15ae2623'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 49.43 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+DELETE FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:28a8dd7533a2de630e1e2a7a15ae2623'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 0.6074 s [LONG RUNNING QUERY]
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT RELEASE_LOCK('8972964e2afacf33d716ddd6a257826c') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 59.287 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT GET_LOCK('a82e80f02d75947cd3dcab66525be5f9', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 53.37 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:4b0a51cc265304f5b693a1743b23f90a'
+AND `ip_address` = '::1'
+ Affected rows: 0
+ Execution Time: 46.81 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_app_config`
+ORDER BY `key` ASC
+ Affected rows: 132
+ Execution Time: 55.163 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 67.239 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'sales%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 2
+ Execution Time: 49.988 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 47.934 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 55.974 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 51.061 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 63.916 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 59.455 ms
+
+*** Query: 2025-07-30 06:35:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 0.248938 s
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SELECT *
+FROM `ospos_dinner_tables`
+WHERE `status` = 0
+OR `dinner_table_id` IS NULL
+AND `deleted` = 0
+ Affected rows: 3
+ Execution Time: 49.663 ms
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SELECT *
+FROM `ospos_stock_locations`
+JOIN `ospos_permissions` AS `permissions` ON `permissions`.`location_id` = `ospos_stock_locations`.`location_id`
+JOIN `ospos_grants` AS `grants` ON `grants`.`permission_id` = `permissions`.`permission_id`
+WHERE `person_id` = '3'
+AND  `permissions`.`permission_id` LIKE 'sales%' ESCAPE '!'
+AND `deleted` = 0
+ Affected rows: 1
+ Execution Time: 51.884 ms
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SELECT *
+FROM `ospos_stock_locations`
+JOIN `ospos_permissions` AS `permissions` ON `permissions`.`location_id` = `ospos_stock_locations`.`location_id`
+JOIN `ospos_grants` AS `grants` ON `grants`.`permission_id` = `permissions`.`permission_id`
+WHERE `person_id` = '3'
+AND  `permissions`.`permission_id` LIKE 'sales%' ESCAPE '!'
+AND `deleted` = 0
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 0.315141 s
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_customers`.`person_id`
+WHERE `ospos_customers`.`person_id` = -1
+ Affected rows: 0
+ Execution Time: 83.12 ms
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SELECT *
+FROM `ospos_people`
+WHERE `person_id` = -1
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 51.28 ms
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SHOW COLUMNS FROM `ospos_people`
+ Affected rows: 13
+ Execution Time: 65.04 ms
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SHOW COLUMNS FROM `ospos_customers`
+ Affected rows: 14
+ Execution Time: 58.805 ms
+
+*** Query: 2025-07-30 13:35:06 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 70.65 ms
+
+*** Query: 2025-07-30 13:35:07 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'items'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 1.166972 s [LONG RUNNING QUERY]
+
+*** Query: 2025-07-30 13:35:07 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 69.242 ms
+
+*** Query: 2025-07-30 13:35:08 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'sales_change_price'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 55.473 ms
+
+*** Query: 2025-07-30 13:35:08 +07 *******************
+SELECT COUNT(*) AS `numrows`
+FROM `ospos_sales`
+WHERE `invoice_number` IS NOT NULL
+ Affected rows: 1
+ Execution Time: 48.151 ms
+
+*** Query: 2025-07-30 13:35:08 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'reports_sales'
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 51.217 ms
+
+*** Query: 2025-07-30 13:35:09 +07 *******************
+INSERT INTO `ospos_sessions` (`timestamp`, `id`, `ip_address`, `data`) VALUES (now(), 'ospos_session:4b0a51cc265304f5b693a1743b23f90a', '::1', '__ci_last_regenerate|i:1753857304;_ci_previous_url|s:38:\"https://localhost/ospos_2/public/sales\";person_id|s:1:\"3\";menu_group|s:4:\"home\";allow_temp_items|i:1;sale_id|i:-1;cash_rounding|i:0;cash_mode|i:0;sales_cart|a:0:{}sales_customer|i:-1;sales_mode|s:4:\"sale\";sales_location|i:1;sales_payments|a:0:{}')
+ Affected rows: 1
+ Execution Time: 1.563849 s [LONG RUNNING QUERY]
+
+*** Query: 2025-07-30 13:35:09 +07 *******************
+SELECT RELEASE_LOCK('a82e80f02d75947cd3dcab66525be5f9') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 47.712 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT GET_LOCK('a82e80f02d75947cd3dcab66525be5f9', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 68.262 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:4b0a51cc265304f5b693a1743b23f90a'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 57.308 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 54.385 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'customers%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 1
+ Execution Time: 55.113 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_permissions`
+WHERE `permission_id` LIKE 'customers_%' ESCAPE '!'
+ Affected rows: 0
+ Execution Time: 49.267 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 50.372 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 73.7 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 69.65 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 70.44 ms
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 0.100061 s
+
+*** Query: 2025-07-30 06:35:13 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 69.488 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_customers`.`person_id`
+WHERE `ospos_customers`.`person_id` = -1
+ Affected rows: 0
+ Execution Time: 0.247849 s
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SELECT *
+FROM `ospos_people`
+WHERE `person_id` = -1
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 64.057 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SHOW COLUMNS FROM `ospos_people`
+ Affected rows: 13
+ Execution Time: 58.402 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SHOW COLUMNS FROM `ospos_customers`
+ Affected rows: 14
+ Execution Time: 66.761 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 0.254682 s
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 54.433 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SHOW COLUMNS FROM `ospos_tax_codes`
+ Affected rows: 6
+ Execution Time: 56.904 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SELECT *
+FROM `ospos_customers_packages`
+WHERE `deleted` = 0
+ Affected rows: 5
+ Execution Time: 63.157 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+CREATE TEMPORARY TABLE IF NOT EXISTS ospos_sales_items_temp (INDEX(sale_id)) ENGINE=MEMORY (SELECT `ospos_sales`.`sale_id` AS `sale_id`, AVG(`ospos_sales_items`.`discount`) AS avg_discount, SUM(`ospos_sales_items`.`quantity_purchased`) AS quantity
+FROM `ospos_sales`
+JOIN `ospos_sales_items` ON `ospos_sales_items`.`sale_id` = `ospos_sales`.`sale_id`
+WHERE `ospos_sales`.`customer_id` = -1
+GROUP BY `sale_id`)
+ Affected rows: 0
+ Execution Time: 58.118 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+SELECT SUM(sales_payments.payment_amount - sales_payments.cash_refund) AS total, MIN(sales_payments.payment_amount - sales_payments.cash_refund) AS min, MAX(sales_payments.payment_amount - sales_payments.cash_refund) AS max, AVG(sales_payments.payment_amount - sales_payments.cash_refund) AS average, ROUND(AVG(sales_items_temp.avg_discount), 2) AS avg_discount, ROUND(SUM(sales_items_temp.quantity), 0) AS quantity
+FROM `ospos_sales`
+JOIN `ospos_sales_payments` AS `sales_payments` ON `ospos_sales`.`sale_id` = `sales_payments`.`sale_id`
+JOIN `ospos_sales_items_temp` AS `sales_items_temp` ON `ospos_sales`.`sale_id` = `sales_items_temp`.`sale_id`
+WHERE `ospos_sales`.`customer_id` = -1
+AND `ospos_sales`.`sale_status` = 0
+GROUP BY `ospos_sales`.`customer_id`
+ Affected rows: 0
+ Execution Time: 59.304 ms
+
+*** Query: 2025-07-30 13:35:14 +07 *******************
+DROP TEMPORARY TABLE IF EXISTS ospos_sales_items_temp
+ Affected rows: 0
+ Execution Time: 55.02 ms
+
+*** Query: 2025-07-30 13:35:15 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 50.348 ms
+
+*** Query: 2025-07-30 13:35:15 +07 *******************
+UPDATE `ospos_sessions` SET `timestamp` = now()
+WHERE `id` = 'ospos_session:4b0a51cc265304f5b693a1743b23f90a'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 0.30112 s
+
+*** Query: 2025-07-30 13:35:15 +07 *******************
+SELECT RELEASE_LOCK('a82e80f02d75947cd3dcab66525be5f9') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 58.311 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT GET_LOCK('a82e80f02d75947cd3dcab66525be5f9', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 69.245 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:4b0a51cc265304f5b693a1743b23f90a'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 40.161 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+DELETE FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:4b0a51cc265304f5b693a1743b23f90a'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 48.688 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT RELEASE_LOCK('a82e80f02d75947cd3dcab66525be5f9') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 57.355 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT GET_LOCK('312c262cee4a2f629a3c0566c3381423', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 60.15 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 0
+ Execution Time: 53.11 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT *
+FROM `ospos_app_config`
+ORDER BY `key` ASC
+ Affected rows: 132
+ Execution Time: 0.121406 s
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 53.663 ms
+
+*** Query: 2025-07-30 06:42:55 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'sales%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 2
+ Execution Time: 58.036 ms
+
+*** Query: 2025-07-30 06:42:56 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 0.336088 s
+
+*** Query: 2025-07-30 06:42:56 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 61.509 ms
+
+*** Query: 2025-07-30 06:42:56 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 68.096 ms
+
+*** Query: 2025-07-30 06:42:56 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 61.06 ms
+
+*** Query: 2025-07-30 06:42:56 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 65.164 ms
+
+*** Query: 2025-07-30 06:42:56 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 58.443 ms
+
+*** Query: 2025-07-30 13:42:56 +07 *******************
+SELECT *
+FROM `ospos_dinner_tables`
+WHERE `status` = 0
+OR `dinner_table_id` IS NULL
+AND `deleted` = 0
+ Affected rows: 3
+ Execution Time: 50.117 ms
+
+*** Query: 2025-07-30 13:42:56 +07 *******************
+SELECT *
+FROM `ospos_stock_locations`
+JOIN `ospos_permissions` AS `permissions` ON `permissions`.`location_id` = `ospos_stock_locations`.`location_id`
+JOIN `ospos_grants` AS `grants` ON `grants`.`permission_id` = `permissions`.`permission_id`
+WHERE `person_id` = '3'
+AND  `permissions`.`permission_id` LIKE 'sales%' ESCAPE '!'
+AND `deleted` = 0
+ Affected rows: 1
+ Execution Time: 60.362 ms
+
+*** Query: 2025-07-30 13:42:56 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_customers`.`person_id`
+WHERE `ospos_customers`.`person_id` = -1
+ Affected rows: 0
+ Execution Time: 67.911 ms
+
+*** Query: 2025-07-30 13:42:56 +07 *******************
+SELECT *
+FROM `ospos_people`
+WHERE `person_id` = -1
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 78.177 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SHOW COLUMNS FROM `ospos_people`
+ Affected rows: 13
+ Execution Time: 58.347 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SHOW COLUMNS FROM `ospos_customers`
+ Affected rows: 14
+ Execution Time: 48.716 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 65.962 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'items'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 62.196 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 63.324 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'sales_change_price'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 50.655 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT COUNT(*) AS `numrows`
+FROM `ospos_sales`
+WHERE `invoice_number` IS NOT NULL
+ Affected rows: 1
+ Execution Time: 54.906 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'reports_sales'
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 68.725 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+INSERT INTO `ospos_sessions` (`timestamp`, `id`, `ip_address`, `data`) VALUES (now(), 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce', '::1', '__ci_last_regenerate|i:1753857775;_ci_previous_url|s:38:\"https://localhost/ospos_2/public/sales\";person_id|s:1:\"3\";menu_group|s:4:\"home\";allow_temp_items|i:1;sale_id|i:-1;cash_rounding|i:0;cash_mode|i:0;sales_cart|a:0:{}sales_customer|i:-1;sales_mode|s:4:\"sale\";sales_location|i:1;sales_payments|a:0:{}')
+ Affected rows: 1
+ Execution Time: 55.626 ms
+
+*** Query: 2025-07-30 13:42:57 +07 *******************
+SELECT RELEASE_LOCK('312c262cee4a2f629a3c0566c3381423') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 58.167 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT GET_LOCK('312c262cee4a2f629a3c0566c3381423', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 57.6 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 56.35 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 59.27 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'customers%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 1
+ Execution Time: 56.086 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_permissions`
+WHERE `permission_id` LIKE 'customers_%' ESCAPE '!'
+ Affected rows: 0
+ Execution Time: 45.075 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 57.591 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 51.986 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 51.261 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 56.927 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 68.449 ms
+
+*** Query: 2025-07-30 06:43:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 60.527 ms
+
+*** Query: 2025-07-30 13:43:05 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_customers`.`person_id` = `ospos_people`.`person_id`
+WHERE   (
+`first_name` LIKE '%g%' ESCAPE '!'
+OR  `last_name` LIKE '%g%' ESCAPE '!'
+OR  CONCAT(first_name, " ", last_name) LIKE '%g%' ESCAPE '!'
+OR  `email` LIKE '%g%' ESCAPE '!'
+OR  `phone_number` LIKE '%g%' ESCAPE '!'
+OR  `company_name` LIKE '%g%' ESCAPE '!'
+ )
+AND `deleted` = 0
+ORDER BY `last_name` ASC
+ Affected rows: 1
+ Execution Time: 60.829 ms
+
+*** Query: 2025-07-30 13:43:05 +07 *******************
+UPDATE `ospos_sessions` SET `timestamp` = now()
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 58.72 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT GET_LOCK('312c262cee4a2f629a3c0566c3381423', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 0.394294 s
+
+*** Query: 2025-07-30 13:43:06 +07 *******************
+SELECT RELEASE_LOCK('312c262cee4a2f629a3c0566c3381423') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 67.392 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 54.461 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 71.979 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'customers%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 1
+ Execution Time: 73.796 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_permissions`
+WHERE `permission_id` LIKE 'customers_%' ESCAPE '!'
+ Affected rows: 0
+ Execution Time: 48.965 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 49.191 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 60.471 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 60.253 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 76.494 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 72.594 ms
+
+*** Query: 2025-07-30 06:43:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 56.932 ms
+
+*** Query: 2025-07-30 13:43:06 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_customers`.`person_id` = `ospos_people`.`person_id`
+WHERE   (
+`first_name` LIKE '%gu%' ESCAPE '!'
+OR  `last_name` LIKE '%gu%' ESCAPE '!'
+OR  CONCAT(first_name, " ", last_name) LIKE '%gu%' ESCAPE '!'
+OR  `email` LIKE '%gu%' ESCAPE '!'
+OR  `phone_number` LIKE '%gu%' ESCAPE '!'
+OR  `company_name` LIKE '%gu%' ESCAPE '!'
+ )
+AND `deleted` = 0
+ORDER BY `last_name` ASC
+ Affected rows: 1
+ Execution Time: 67.126 ms
+
+*** Query: 2025-07-30 13:43:06 +07 *******************
+UPDATE `ospos_sessions` SET `timestamp` = now()
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 58.666 ms
+
+*** Query: 2025-07-30 13:43:06 +07 *******************
+SELECT RELEASE_LOCK('312c262cee4a2f629a3c0566c3381423') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 52.657 ms
+
+*** Query: 2025-07-30 06:44:09 UTC *******************
+SELECT GET_LOCK('312c262cee4a2f629a3c0566c3381423', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 0.140254 s
+
+*** Query: 2025-07-30 06:44:09 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 45.008 ms
+
+*** Query: 2025-07-30 06:44:09 UTC *******************
+SELECT *
+FROM `ospos_app_config`
+ORDER BY `key` ASC
+ Affected rows: 132
+ Execution Time: 51.125 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 0.463347 s
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'sales%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 2
+ Execution Time: 48.187 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 50.283 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 58.415 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 55.548 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 58.615 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 57.928 ms
+
+*** Query: 2025-07-30 06:44:10 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 70.722 ms
+
+*** Query: 2025-07-30 13:44:10 +07 *******************
+SELECT *
+FROM `ospos_dinner_tables`
+WHERE `status` = 0
+OR `dinner_table_id` IS NULL
+AND `deleted` = 0
+ Affected rows: 3
+ Execution Time: 52.798 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_stock_locations`
+JOIN `ospos_permissions` AS `permissions` ON `permissions`.`location_id` = `ospos_stock_locations`.`location_id`
+JOIN `ospos_grants` AS `grants` ON `grants`.`permission_id` = `permissions`.`permission_id`
+WHERE `person_id` = '3'
+AND  `permissions`.`permission_id` LIKE 'sales%' ESCAPE '!'
+AND `deleted` = 0
+ Affected rows: 1
+ Execution Time: 67.854 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_customers`.`person_id`
+WHERE `ospos_customers`.`person_id` = -1
+ Affected rows: 0
+ Execution Time: 57.688 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_people`
+WHERE `person_id` = -1
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 53.037 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SHOW COLUMNS FROM `ospos_people`
+ Affected rows: 13
+ Execution Time: 47.788 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SHOW COLUMNS FROM `ospos_customers`
+ Affected rows: 14
+ Execution Time: 48.172 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 73.999 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'items'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 50.767 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 58.257 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'sales_change_price'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 54.114 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT COUNT(*) AS `numrows`
+FROM `ospos_sales`
+WHERE `invoice_number` IS NOT NULL
+ Affected rows: 1
+ Execution Time: 0.131747 s
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'reports_sales'
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 53.163 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+UPDATE `ospos_sessions` SET `timestamp` = now()
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 52.2 ms
+
+*** Query: 2025-07-30 13:44:11 +07 *******************
+SELECT RELEASE_LOCK('312c262cee4a2f629a3c0566c3381423') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 55.405 ms
+
+*** Query: 2025-07-30 06:45:04 UTC *******************
+SELECT GET_LOCK('312c262cee4a2f629a3c0566c3381423', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 60.152 ms
+
+*** Query: 2025-07-30 06:45:05 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 0.565347 s [LONG RUNNING QUERY]
+
+*** Query: 2025-07-30 06:45:05 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 53.986 ms
+
+*** Query: 2025-07-30 06:45:05 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'sales%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 2
+ Execution Time: 56.016 ms
+
+*** Query: 2025-07-30 06:45:05 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 59.872 ms
+
+*** Query: 2025-07-30 06:45:05 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 66.459 ms
+
+*** Query: 2025-07-30 06:45:05 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 58.566 ms
+
+*** Query: 2025-07-30 06:45:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 66.716 ms
+
+*** Query: 2025-07-30 06:45:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 50.921 ms
+
+*** Query: 2025-07-30 06:45:06 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 67.925 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_dinner_tables`
+WHERE `status` = 0
+OR `dinner_table_id` IS NULL
+AND `deleted` = 0
+ Affected rows: 3
+ Execution Time: 59.079 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_stock_locations`
+JOIN `ospos_permissions` AS `permissions` ON `permissions`.`location_id` = `ospos_stock_locations`.`location_id`
+JOIN `ospos_grants` AS `grants` ON `grants`.`permission_id` = `permissions`.`permission_id`
+WHERE `person_id` = '3'
+AND  `permissions`.`permission_id` LIKE 'sales%' ESCAPE '!'
+AND `deleted` = 0
+ Affected rows: 1
+ Execution Time: 60.2 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_customers`.`person_id`
+WHERE `ospos_customers`.`person_id` = -1
+ Affected rows: 0
+ Execution Time: 45.972 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_people`
+WHERE `person_id` = -1
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 59.812 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SHOW COLUMNS FROM `ospos_people`
+ Affected rows: 13
+ Execution Time: 62.638 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SHOW COLUMNS FROM `ospos_customers`
+ Affected rows: 14
+ Execution Time: 0.101501 s
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 56.839 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'items'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 57.873 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 69.487 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'sales_change_price'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 51.987 ms
+
+*** Query: 2025-07-30 13:45:06 +07 *******************
+SELECT COUNT(*) AS `numrows`
+FROM `ospos_sales`
+WHERE `invoice_number` IS NOT NULL
+ Affected rows: 1
+ Execution Time: 0.164866 s
+
+*** Query: 2025-07-30 13:45:07 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'reports_sales'
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 54.964 ms
+
+*** Query: 2025-07-30 13:45:07 +07 *******************
+UPDATE `ospos_sessions` SET `timestamp` = now()
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 78.827 ms
+
+*** Query: 2025-07-30 13:45:07 +07 *******************
+SELECT RELEASE_LOCK('312c262cee4a2f629a3c0566c3381423') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 53.898 ms
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT GET_LOCK('312c262cee4a2f629a3c0566c3381423', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 0.340764 s
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 55.739 ms
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+DELETE FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:b60e4bd65ccb7eac51d651ec1aff32ce'
+AND `ip_address` = '::1'
+ Affected rows: 1
+ Execution Time: 0.283972 s
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT RELEASE_LOCK('312c262cee4a2f629a3c0566c3381423') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 60.885 ms
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT GET_LOCK('cb6b6d5ed53c0d77b3d262a984dee438', 300) AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 56.363 ms
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT `data`
+FROM `ospos_sessions`
+WHERE `id` = 'ospos_session:029c886048939433815b234b44f83fae'
+AND `ip_address` = '::1'
+ Affected rows: 0
+ Execution Time: 0.357489 s
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT *
+FROM `ospos_app_config`
+ORDER BY `key` ASC
+ Affected rows: 132
+ Execution Time: 52.698 ms
+
+*** Query: 2025-07-30 06:50:52 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 49.542 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `permission_id` LIKE 'sales%' ESCAPE '!'
+AND `person_id` = 3
+ Affected rows: 2
+ Execution Time: 56.519 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SELECT *
+FROM `ospos_modules`
+JOIN `ospos_permissions` ON `ospos_permissions`.`permission_id` = `ospos_modules`.`module_id`
+JOIN `ospos_grants` ON `ospos_permissions`.`permission_id` = `ospos_grants`.`permission_id`
+WHERE `person_id` = 3
+AND `menu_group` IN ('home','both')
+AND `sort` != 0
+ORDER BY `sort` ASC
+ Affected rows: 3
+ Execution Time: 70.497 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SHOW TABLES FROM `db_pposmp`
+ Affected rows: 39
+ Execution Time: 44.591 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SELECT `version`
+FROM `ospos_migrations`
+ORDER BY `version` DESC
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 54.189 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 56.215 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 66.874 ms
+
+*** Query: 2025-07-30 06:50:53 UTC *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 67.543 ms
+
+*** Query: 2025-07-30 13:50:53 +07 *******************
+SELECT *
+FROM `ospos_dinner_tables`
+WHERE `status` = 0
+OR `dinner_table_id` IS NULL
+AND `deleted` = 0
+ Affected rows: 3
+ Execution Time: 52.247 ms
+
+*** Query: 2025-07-30 13:50:53 +07 *******************
+SELECT *
+FROM `ospos_stock_locations`
+JOIN `ospos_permissions` AS `permissions` ON `permissions`.`location_id` = `ospos_stock_locations`.`location_id`
+JOIN `ospos_grants` AS `grants` ON `grants`.`permission_id` = `permissions`.`permission_id`
+WHERE `person_id` = '3'
+AND  `permissions`.`permission_id` LIKE 'sales%' ESCAPE '!'
+AND `deleted` = 0
+ Affected rows: 1
+ Execution Time: 0.33218 s
+
+*** Query: 2025-07-30 13:50:53 +07 *******************
+SELECT *
+FROM `ospos_customers`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_customers`.`person_id`
+WHERE `ospos_customers`.`person_id` = -1
+ Affected rows: 0
+ Execution Time: 56.754 ms
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT *
+FROM `ospos_people`
+WHERE `person_id` = -1
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 0.358404 s
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SHOW COLUMNS FROM `ospos_people`
+ Affected rows: 13
+ Execution Time: 72.317 ms
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SHOW COLUMNS FROM `ospos_customers`
+ Affected rows: 14
+ Execution Time: 56.87 ms
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 0.13237 s
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'items'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 71.692 ms
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT *
+FROM `ospos_employees`
+JOIN `ospos_people` ON `ospos_people`.`person_id` = `ospos_employees`.`person_id`
+WHERE `ospos_employees`.`person_id` = 3
+ Affected rows: 1
+ Execution Time: 0.143126 s
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'sales_change_price'
+ LIMIT 1
+ Affected rows: 0
+ Execution Time: 44.864 ms
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT COUNT(*) AS `numrows`
+FROM `ospos_sales`
+WHERE `invoice_number` IS NOT NULL
+ Affected rows: 1
+ Execution Time: 51.501 ms
+
+*** Query: 2025-07-30 13:50:54 +07 *******************
+SELECT *
+FROM `ospos_grants`
+WHERE `person_id` = 3
+AND `permission_id` = 'reports_sales'
+ LIMIT 1
+ Affected rows: 1
+ Execution Time: 66.055 ms
+
+*** Query: 2025-07-30 13:50:55 +07 *******************
+INSERT INTO `ospos_sessions` (`timestamp`, `id`, `ip_address`, `data`) VALUES (now(), 'ospos_session:029c886048939433815b234b44f83fae', '::1', '__ci_last_regenerate|i:1753858252;_ci_previous_url|s:38:\"https://localhost/ospos_2/public/sales\";person_id|s:1:\"3\";menu_group|s:4:\"home\";allow_temp_items|i:1;sale_id|i:-1;cash_rounding|i:0;cash_mode|i:0;sales_cart|a:0:{}sales_customer|i:-1;sales_mode|s:4:\"sale\";sales_location|i:1;sales_payments|a:0:{}')
+ Affected rows: 1
+ Execution Time: 0.327054 s
+
+*** Query: 2025-07-30 13:50:55 +07 *******************
+SELECT RELEASE_LOCK('cb6b6d5ed53c0d77b3d262a984dee438') AS ci_session_lock
+ Affected rows: 1
+ Execution Time: 56.738 ms
+
