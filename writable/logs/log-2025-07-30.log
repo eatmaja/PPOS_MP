@@ -1,0 +1,501 @@
+CRITICAL - 2025-07-30 08:49:44 --> ErrorException: fileperms(): stat failed for /var/www/html/ppos_demo/public/uploads/item_pics/
+[Method: GET, Route: config]
+in APPPATH/Views/configs/system_info.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/configs/system_info.php(136): fileperms()
+ 3 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_info.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/configs/system_config.php(11): view()
+ 7 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_config.php')
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+10 APPPATH/Views/configs/manage.php(75): view()
+11 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/manage.php')
+12 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+14 APPPATH/Controllers/Config.php(275): view()
+15 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Config->getIndex()
+16 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+18 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+20 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 10:36:33 --> ErrorException: fileperms(): stat failed for /var/www/html/ppos_demo/public/uploads/item_pics/
+[Method: GET, Route: config]
+in APPPATH/Views/configs/system_info.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/configs/system_info.php(136): fileperms()
+ 3 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_info.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/configs/system_config.php(11): view()
+ 7 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_config.php')
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+10 APPPATH/Views/configs/manage.php(75): view()
+11 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/manage.php')
+12 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+14 APPPATH/Controllers/Config.php(275): view()
+15 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Config->getIndex()
+16 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+18 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+20 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 10:39:05 --> ErrorException: fileperms(): stat failed for /var/www/html/ppos_demo/writable//uploads/importCustomers.csv
+[Method: GET, Route: config]
+in APPPATH/Views/configs/system_info.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/configs/system_info.php(155): fileperms()
+ 3 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_info.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/configs/system_config.php(11): view()
+ 7 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_config.php')
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+10 APPPATH/Views/configs/manage.php(75): view()
+11 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/manage.php')
+12 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+14 APPPATH/Controllers/Config.php(275): view()
+15 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Config->getIndex()
+16 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+18 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+20 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:00:53 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:01:08 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:01:51 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:02:33 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:02:51 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:03:52 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:04:04 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:04:10 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:04:18 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:07:04 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:08:07 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:08:39 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:11:15 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:19:42 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:22:22 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:24:14 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:26:23 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:42:10 --> Error: Call to a member function getRowArray() on bool
+[Method: GET, Route: reports/get_detailed_sales_row/2]
+in APPPATH/Models/Reports/Detailed_sales.php on line 89.
+ 1 APPPATH/Controllers/Reports.php(1626): App\Models\Reports\Detailed_sales->getDataBySaleId()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Reports->getGet_detailed_sales_row()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:42:19 --> Error: Call to a member function getRowArray() on bool
+[Method: GET, Route: reports/get_detailed_sales_row/3]
+in APPPATH/Models/Reports/Detailed_sales.php on line 89.
+ 1 APPPATH/Controllers/Reports.php(1626): App\Models\Reports\Detailed_sales->getDataBySaleId()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Reports->getGet_detailed_sales_row()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:42:26 --> Error: Call to a member function getRowArray() on bool
+[Method: GET, Route: reports/get_detailed_sales_row/2]
+in APPPATH/Models/Reports/Detailed_sales.php on line 89.
+ 1 APPPATH/Controllers/Reports.php(1626): App\Models\Reports\Detailed_sales->getDataBySaleId()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Reports->getGet_detailed_sales_row()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:42:32 --> Error: Call to a member function getRowArray() on bool
+[Method: GET, Route: reports/get_detailed_sales_row/3]
+in APPPATH/Models/Reports/Detailed_sales.php on line 89.
+ 1 APPPATH/Controllers/Reports.php(1626): App\Models\Reports\Detailed_sales->getDataBySaleId()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Reports->getGet_detailed_sales_row()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:45:03 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:45:17 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:45:21 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:45:24 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:55:46 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:55:48 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:55:50 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:55:52 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:55:54 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:55:56 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 11:56:06 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
