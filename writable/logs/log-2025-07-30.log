@@ -681,3 +681,287 @@ in APPPATH\Views\sales\suspended.php on line 40.
  9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 13:54:44 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 13:54:57 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 13:55:24 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 13:55:53 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 13:57:13 --> ErrorException: fileperms(): stat failed for /var/www/html/ppos_demo/public/uploads/item_pics/
+[Method: GET, Route: config]
+in APPPATH/Views/configs/system_info.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/configs/system_info.php(136): fileperms()
+ 3 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_info.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/configs/system_config.php(11): view()
+ 7 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_config.php')
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+10 APPPATH/Views/configs/manage.php(75): view()
+11 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/manage.php')
+12 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+14 APPPATH/Controllers/Config.php(275): view()
+15 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Config->getIndex()
+16 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+18 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+20 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 13:58:55 --> ErrorException: fileperms(): stat failed for /var/www/html/ppos_demo/public/uploads/item_pics/
+[Method: GET, Route: config]
+in APPPATH/Views/configs/system_info.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/configs/system_info.php(136): fileperms()
+ 3 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_info.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/configs/system_config.php(11): view()
+ 7 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/system_config.php')
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+10 APPPATH/Views/configs/manage.php(75): view()
+11 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/configs/manage.php')
+12 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+14 APPPATH/Controllers/Config.php(275): view()
+15 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Config->getIndex()
+16 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+18 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+20 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:02:08 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:07:11 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:09:21 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:13:36 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:13:52 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:14:35 --> TypeError: parse_decimals(): Argument #1 ($number) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 579
+[Method: POST, Route: sales/editItem/1]
+in APPPATH/Helpers/locale_helper.php on line 463.
+ 1 APPPATH/Controllers/Sales.php(579): parse_decimals()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->postEditItem()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:23:20 --> TypeError: App\Models\Sale::is_valid_receipt(): Argument #1 ($receipt_sale_id) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 148
+[Method: GET, Route: sales/search]
+in APPPATH/Models/Sale.php on line 399.
+ 1 APPPATH/Controllers/Sales.php(148): App\Models\Sale->is_valid_receipt()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:25:17 --> TypeError: App\Models\Sale::is_valid_receipt(): Argument #1 ($receipt_sale_id) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 148
+[Method: GET, Route: sales/search]
+in APPPATH/Models/Sale.php on line 399.
+ 1 APPPATH/Controllers/Sales.php(148): App\Models\Sale->is_valid_receipt()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:26:43 --> TypeError: App\Models\Sale::is_valid_receipt(): Argument #1 ($receipt_sale_id) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 148
+[Method: GET, Route: sales/search]
+in APPPATH/Models/Sale.php on line 399.
+ 1 APPPATH/Controllers/Sales.php(148): App\Models\Sale->is_valid_receipt()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:27:08 --> TypeError: App\Models\Sale::is_valid_receipt(): Argument #1 ($receipt_sale_id) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 148
+[Method: GET, Route: sales/search]
+in APPPATH/Models/Sale.php on line 399.
+ 1 APPPATH/Controllers/Sales.php(148): App\Models\Sale->is_valid_receipt()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:27:32 --> TypeError: App\Models\Sale::is_valid_receipt(): Argument #1 ($receipt_sale_id) must be of type string, null given, called in /var/www/html/ppos_demo/app/Controllers/Sales.php on line 148
+[Method: GET, Route: sales/search]
+in APPPATH/Models/Sale.php on line 399.
+ 1 APPPATH/Controllers/Sales.php(148): App\Models\Sale->is_valid_receipt()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 07:43:38 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Q2FzaA=="
+[Method: GET, Route: sales/deletePayment/Q2FzaA==]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 07:45:00 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Q2FzaA=="
+[Method: GET, Route: sales/deletePayment/Q2FzaA==]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 07:45:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Q2FzaA=="
+[Method: GET, Route: sales/deletePayment/Q2FzaA==]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 07:45:04 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Q2FzaA=="
+[Method: GET, Route: sales/deletePayment/Q2FzaA==]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 07:45:26 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Q2FzaA=="
+[Method: GET, Route: sales/deletePayment/Q2FzaA==]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 07:46:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Q2FzaA=="
+[Method: GET, Route: sales/deletePayment/Q2FzaA==]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:49:00 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 14:49:08 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH/Views/sales/suspended.php on line 40.
+ 1 APPPATH/Views/sales/suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/var/www/html/ppos_demo/app/Views/sales/suspended.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sales.php(1541): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
