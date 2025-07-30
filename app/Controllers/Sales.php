@@ -577,7 +577,13 @@ class Sales extends Secure_Controller
             $discount = $discount_type
                 ? parse_quantity($this->request->getPost('discount'))
                 //: parse_decimals($this->request->getPost('discount'));
+<<<<<<< HEAD
 		: parse_decimals((string)($this->request->getPost('discount') ?? '0'));
+=======
+                : parse_decimals((string)($this->request->getPost('discount') ?? '0'));
+
+
+>>>>>>> 8862265d1c287d482b938001927d147d7bd5a696
             $item_location = $this->request->getPost('location', FILTER_SANITIZE_NUMBER_INT);
             $discounted_total = $this->request->getPost('discounted_total') != ''
                 ? parse_decimals($this->request->getPost('discounted_total') ?? '')
