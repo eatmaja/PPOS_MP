@@ -499,3 +499,185 @@ in APPPATH/Views/sales/suspended.php on line 40.
  9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-30 12:09:44 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 41.
+ 1 APPPATH\Views\sales\suspended.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$Dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:09:48 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 41.
+ 1 APPPATH\Views\sales\suspended.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$Dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:09:51 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 41.
+ 1 APPPATH\Views\sales\suspended.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$Dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:09:53 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 41.
+ 1 APPPATH\Views\sales\suspended.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$Dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:09:56 --> ErrorException: Undefined property: CodeIgniter\View\View::$Dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 41.
+ 1 APPPATH\Views\sales\suspended.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$Dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:11:41 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:11:58 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:12:00 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:12:05 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:12:07 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:24:52 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:25:09 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 12:33:58 --> ErrorException: Undefined property: CodeIgniter\View\View::$dinner_table
+[Method: GET, Route: sales/suspended]
+in APPPATH\Views\sales\suspended.php on line 40.
+ 1 APPPATH\Views\sales\suspended.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$dinner_table', 'C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp82\\htdocs\\ospos_2\\app\\Views\\sales\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('sales/suspended', [], true)
+ 5 APPPATH\Controllers\Sales.php(1541): view('sales/suspended', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sales->getSuspended()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
